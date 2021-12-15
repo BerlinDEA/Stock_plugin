@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/menu.xsd">
+
+    <entries>
+        <entry>
+            <name>Dennis Export</name>
+            <label lang="en">Dennis Export</label>
+            <label lang="de">Dennis Export</label>
+            <controller>artikel_export</controller>
+            <action>index</action>
+            <class>sprite-application-block</class>
+            <parent identifiedBy="controller">Content</parent>
+            <onclick>Shopware.ModuleManager.createSimplifiedModule("artikel_export", { "title": "Artikel_Export",
+                "width": "800px", "iconCls": "sprite-database-export" })</onclick>
+        </entry>
+    </entries>
+</menu>
